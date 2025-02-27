@@ -1,4 +1,4 @@
-import pool from '../connection.js';
+import pool from '../db/connection.js';
 
 export const getAllDepartments = async () => {
   const res = await pool.query('SELECT * FROM department');
